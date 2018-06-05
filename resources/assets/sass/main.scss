@@ -102,9 +102,26 @@ body {
       right: 0;
       font-size: 1.2rem;
       padding-right: 15px;
-      & > i {
+      & > div {
+        display: inline-block;
         color: #797979;
         padding: 0 2px;
+        position: relative;
+      }
+      .noti-number{
+        display: none;
+        position: absolute;
+        background: $red;
+        color: #fff;
+        font-size: .45rem;
+        top: -5px;
+        right: -5px;
+        padding: 2px 5px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        &.active{
+          display: block;
+        }
       }
     }
   }
